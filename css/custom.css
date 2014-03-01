@@ -1,0 +1,223 @@
+/* fancy fonts */
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Montserrat+Alternates|Finger+Paint);
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.blue {
+  color:#0CF7FF;
+}
+
+.strike {
+  text-decoration:line-through;
+}
+
+a:link, a:visited {
+  color:#0CF7FF;
+}
+
+h1 {
+  font-weight:700;
+}
+
+.mute {
+  color:#aaa;
+}
+
+.mute-less {
+  color:#333;
+}
+
+.underline {
+  font-weight:700;
+  border-bottom:5px solid #0CF7FF;
+}
+
+.white {
+  color:#fff;
+}
+
+.mountain {
+  width:100%;
+  height:100%;
+  background: url(/main/mountain.jpg) no-repeat 0 0;
+  background-size:cover;
+}
+
+h1.oi {
+  height:100%;
+  background: url(/main/mountain.jpg) no-repeat 0 0;
+  background-size:cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size:225px;
+  font-family:'Finger Paint', cursive;
+  line-height:.8em;
+}
+
+.block { display:block; }
+.half { width:50%; }
+.two-thirds { width:75%; }
+.text-right { text-align:right; }
+.text-left { text-align:left; }
+.left { float:left; }
+.right { float:right; }
+.mid { margin-top:18%; }
+.leading-top {
+  margin-top:.5em;
+}
+.gutter-left {
+  margin-left:.5em;
+}
+
+h1.io {
+    -webkit-background-clip:none;
+    background-clip:none;
+    -webkit-text-fill-color: #fff;
+    color:#fff;
+    font-size:220px;
+    font-family:'Montserrat Alternates', sans-serif;
+}
+
+.push-down {
+  margin-top:20%;
+}
+
+.kinda-big {
+  font-size:150px;
+}
+
+.scrunch {
+  line-height:.58em;
+}
+
+.rather-big {
+  font-size:260px;
+}
+
+.rilbig {
+  font-size:300px;
+}
+
+.squeeze {
+  line-height:.8em;
+}
+
+.center {
+  text-align:center;
+}
+
+
+.full {
+  width:100%;
+  text-align:center;
+}
+
+#slides #slide-0 .container,
+#slides #slide-1 .container,
+#slides #slide-20 .container {
+  padding:0;
+  height:100%;
+}
+
+#slides #slide-12 .container {
+  padding:.3em;
+  height:100%;
+}
+
+#slides #slide-3 {
+  background: url(http://rmmagazine.com/wp-content/uploads/2012/08/seesaw.jpg) no-repeat 0 0;
+  background-size:cover;
+  color:#fff;
+}
+
+#slide-6 {
+  background: url(http://www.slashgear.com/wp-content/uploads/2012/11/UniversalTranslator.jpg) no-repeat 0 0;
+  background-size:cover;
+  color:#fff;
+}
+
+#slide-7 {
+  background: url(http://katemckinnon.files.wordpress.com/2010/09/the-gorn.jpg) no-repeat 0 0;
+  background-size:cover;
+  color:#fff;
+}
+
+#slide-9 {
+  background: url(http://carpefactum.typepad.com/photos/uncategorized/2008/09/15/argument.jpg) no-repeat 0 0;
+  background-size:cover;
+  color:#fff;
+}
+
+#slide-15 {
+  background: url(http://static.designspiration.net/data/l/1108005295777_mkDdPKbZ_l.jpg) no-repeat 0 0;
+  background-size:cover;
+  color:#fff;
+}
+
+.javap {
+  height:100%;
+  overflow:scroll;
+}
+
+html[data-useragent*="WebKit"] {
+  overflow: auto;
+}
+html[data-useragent*="WebKit"] body {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  bottom: 5px;
+  right: 10px;
+  padding: 0 10px;
+  overflow-y: scroll;
+  overflow-x:hidden;
+}
+
+::-webkit-scrollbar{background:#eee;width:2px}
+::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:start:increment{display:none}
+::-webkit-scrollbar-track{border:1px solid rgba(255,255,255,0.3)}
+::-webkit-scrollbar-track-piece{background:transparent}
+::-webkit-scrollbar-thumb:vertical{height:30px;-webkit-transition:background-color 300ms ease-out;-moz-transition:background-color 300ms ease-out;background:\
+rgba(199,199,199,0.8);}
+::-webkit-scrollbar-thumb:vertical:window-inactive{background:rgba(199,199,199,0.2)}
+
+/*.btn {
+  font-size:1.25em;
+  padding:.15em .25em;
+  color:#fff;
+  text-shadow:0 1px #g30A7DF;
+  border:1px solid #25DBFF;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  background-image: -moz-linear-gradient(top, #66efff, #25DBFF);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#66efff), to(#25DBFF));
+  background-image: -o-linear-gradient(top, #66efff, #3699ff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66efff', endColorstr='#25DBFF');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#66efff', endColorstr='#25DBFF')";
+  background-image: linear-gradient(top, #66efff, #25DBFF);
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+.btn:hover {
+   background-image: -moz-linear-gradient(top, #66efff, #13CAEE);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#66efff), to(#13CAEE));
+  background-image: -o-linear-gradient(top, #66efff, #13CAEE);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66efff', endColorstr='#13CAEE');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#66efff', endColorstr='#13CAEE')";
+  background-image: linear-gradient(top, #66efff, #13CAEE);
+}
+
+.btn:active {
+  background-image: -moz-linear-gradient(top, #4DE1FF, #02C8F0);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#4DE1FF), to(#02C8F0));
+  background-image: -o-linear-gradient(top, #4DE1FF, #02C8F0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4DE1FF', endColorstr='#02C8F0');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#4DE1FF', endColorstr='#02C8F0')";
+  background-image: linear-gradient(top, #4DE1FF, #02C8F0);
+}*/
